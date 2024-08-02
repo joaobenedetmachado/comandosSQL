@@ -62,9 +62,3 @@ CREATE TABLE disciplina (
     PRIMARY KEY (codigo)
 );
 
---------------------------------COMANDOS DML----------------------------------
-
-INSERT INTO estado(codigo, nome) values(1, 'Santa Catarina')
-
-INSERT INTO cidade(codigo, nome) values(1, 'Criciuma')
-
