@@ -25,3 +25,10 @@ VALUES (2, 'Maria Clara Silva', 'Avenida das Palmeiras, 123', 'Carlos Silva', 'A
 
 INSERT INTO aluno(codigo, nome, endereco, nomepai, nomemae, cpf, codcurso, codcidade, datanasci, telefone, email)
 VALUES (4, 'Ana Luiza Costa', 'Praça Central, 789', 'Ricardo Costa', 'Juliana Costa', '321.654.987-23', 1, 1, '2008-06-25', '48987765432', 'ana.costa@example.com');
+
+select aluno.nome, curso.nome, cidade.nome, estado.nome, matricula.valor
+from aluno,curso,cidade,estado, matricula
+where aluno.codcurso = curso.codcurso
+and aluno.codcidade = cidade.codcidade
+and cidade.codestado = estado.codestado
+and matricula.codaluno = aluno.codaluno
